@@ -1,0 +1,14 @@
+MODELOS
+
+Roles:Aproved
+sequelize model:generate --name Roles --attributes id:integer, rol_name:string  
+
+Users:Aproved
+sequelize model:generate --name Users --attributes id:integer, username:string, email:string, password:string: id_rol:integer, status:integer, date_register:date
+
+Products:
+sequelize model:generate --name Products --attributes id:integer, product_name:string, price:float, quantity:integer, id_user:integer, status:integer
+
+Sells:Pending
+sequelize model:generate --name Sells --attributes id:integer, id_user:integer, id_product:integer, quantity:integer, price_per_unit:float, total:float, sell_date:date
+
